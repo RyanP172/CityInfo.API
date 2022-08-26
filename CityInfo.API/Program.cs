@@ -18,8 +18,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseRouting();
+
 app.UseAuthorization();
 
-app.MapControllers();
+
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();//this will add enpoints for controller action w/o specifying routes
+});
+
 
 app.Run();
