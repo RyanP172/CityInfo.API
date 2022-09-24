@@ -10,7 +10,7 @@ namespace CityInfo.API
         /// The property below is a singleton patern network
         /// It make sure that we work on the same store as long as we don't restart the server
         /// </summary>
-        public static CitiesDataStore Current { get; } = new CitiesDataStore();//return an instance of the class
+        //public static CitiesDataStore Current { get; } = new CitiesDataStore();//return an instance of the class
 
         public CitiesDataStore()
         {
